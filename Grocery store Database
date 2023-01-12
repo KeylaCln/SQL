@@ -1,0 +1,28 @@
+--Create a grocery store database
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, aisle INTEGER, price INTEGER, color TEXT);
+
+INSERT INTO clothes VALUES (1,"shirt", 4, 12, 15, "red");
+INSERT INTO clothes VALUES(2, "ripped_jeans", 5, 15, 10, "black");
+INSERT INTO clothes VALUES(3, "mom_jeans", 3, 15, 12, "white");
+INSERT INTO clothes VALUES(4, "sleeved_shirt", 13, 12, 9, "black");
+INSERT INTO clothes VALUES(5, "heels", 4, 8, 15, "gold");
+INSERT INTO clothes VALUES(6, "flats", 9, 8, 12, "black");
+INSERT INTO clothes VALUES(7, "sneakers", 10, 8, 3, "white");
+INSERT INTO clothes VALUES(8, "sandals", 2, 8, 4, "brown");
+INSERT INTO clothes VALUES(9, "wedges", 5, 8, 10, "tan");
+INSERT INTO clothes VALUES(10, "crop_top", 23, 11, 15, "yellow");
+INSERT INTO clothes VALUES(11, "tank_top", 14, 11, 18, "purple");
+INSERT INTO clothes VALUES(12, "shorts", 5, 15, 8, "blue");
+INSERT INTO clothes VALUES(13, "knickers", 6,15, 9, "khaki");
+INSERT INTO clothes VALUES(14, "skirt", 10, 16, 45, "green");
+INSERT INTO clothes VALUES(15, "dress", 12, 16, 30, "pink");
+
+--Display the database ordered by price
+
+SELECT *FROM clothes ORDER BY price;
+
+
+--How many articles of clothing and shoes do you have in total?
+
+SELECT SUM (quantity) FROM clothes;
